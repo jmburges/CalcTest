@@ -1,0 +1,950 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>JMMCalculatorViewController Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">CalcTest </a></h1>
+				<a id="developerHome" href="../index.html">Joe and Justin</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">JMMCalculatorViewController Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/buttonView">&nbsp;&nbsp;&nbsp;&nbsp;buttonView</option>
+	
+	<option value="//api/name/calculator">&nbsp;&nbsp;&nbsp;&nbsp;calculator</option>
+	
+	<option value="//api/name/displayLabel">&nbsp;&nbsp;&nbsp;&nbsp;displayLabel</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/buttonIsAnOperation:">&nbsp;&nbsp;&nbsp;&nbsp;- buttonIsAnOperation:</option>
+	
+	<option value="//api/name/calculatorButtonPressed:">&nbsp;&nbsp;&nbsp;&nbsp;- calculatorButtonPressed:</option>
+	
+	<option value="//api/name/handleButtonWithTitlePressed:">&nbsp;&nbsp;&nbsp;&nbsp;- handleButtonWithTitlePressed:</option>
+	
+	<option value="//api/name/handleEquals">&nbsp;&nbsp;&nbsp;&nbsp;- handleEquals</option>
+	
+	<option value="//api/name/handleNumeralPressed:">&nbsp;&nbsp;&nbsp;&nbsp;- handleNumeralPressed:</option>
+	
+	<option value="//api/name/handleOperationPressed:">&nbsp;&nbsp;&nbsp;&nbsp;- handleOperationPressed:</option>
+	
+	<option value="//api/name/operationForString:">&nbsp;&nbsp;&nbsp;&nbsp;- operationForString:</option>
+	
+	<option value="//api/name/setActionForButtons:">&nbsp;&nbsp;&nbsp;&nbsp;- setActionForButtons:</option>
+	
+	<option value="//api/name/viewDidLoad">&nbsp;&nbsp;&nbsp;&nbsp;- viewDidLoad</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_UI Elements">UI Elements</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Public Properties">Public Properties</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Public Methods">Public Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Private Methods">Private Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/buttonView">buttonView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/calculator">calculator</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/displayLabel">displayLabel</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/buttonIsAnOperation:">buttonIsAnOperation:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/calculatorButtonPressed:">calculatorButtonPressed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleButtonWithTitlePressed:">handleButtonWithTitlePressed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleEquals">handleEquals</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleNumeralPressed:">handleNumeralPressed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleOperationPressed:">handleOperationPressed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/operationForString:">operationForString:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setActionForButtons:">setActionForButtons:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewDidLoad">viewDidLoad</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="JMMCalculatorViewController Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">JMMCalculatorViewController Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">UIViewController</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">JMMCalculatorViewController.h<br />JMMCalculatorViewController.m</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>ViewController that takes button presses and hands them to <a href="../Classes/JMMCalculator.html"><code>JMMCalculator</code></a> to calculate</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="UI Elements" name="task_UI Elements"></a>
+						<h3 class="subsubtitle task-title">UI Elements</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/displayLabel">&nbsp;&nbsp;displayLabel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/buttonView">&nbsp;&nbsp;buttonView</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Public Properties" name="task_Public Properties"></a>
+						<h3 class="subsubtitle task-title">Public Properties</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/calculator">&nbsp;&nbsp;calculator</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Public Methods" name="task_Public Methods"></a>
+						<h3 class="subsubtitle task-title">Public Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setActionForButtons:">&ndash;&nbsp;setActionForButtons:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/calculatorButtonPressed:">&ndash;&nbsp;calculatorButtonPressed:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/handleButtonWithTitlePressed:">&ndash;&nbsp;handleButtonWithTitlePressed:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Private Methods" name="task_Private Methods"></a>
+						<h3 class="subsubtitle task-title">Private Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewDidLoad">&ndash;&nbsp;viewDidLoad</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/handleEquals">&ndash;&nbsp;handleEquals</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/handleOperationPressed:">&ndash;&nbsp;handleOperationPressed:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/handleNumeralPressed:">&ndash;&nbsp;handleNumeralPressed:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/buttonIsAnOperation:">&ndash;&nbsp;buttonIsAnOperation:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/operationForString:">&ndash;&nbsp;operationForString:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/buttonView" title="buttonView"></a>
+	<h3 class="subsubtitle method-title">buttonView</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Container view with all of the <code>UIButtons</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UIView *buttonView</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JMMCalculatorViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/calculator" title="calculator"></a>
+	<h3 class="subsubtitle method-title">calculator</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The running instance of <a href="../Classes/JMMCalculator.html"><code>JMMCalculator</code></a> to do the heavy lifting.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) JMMCalculator *calculator</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JMMCalculatorViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/displayLabel" title="displayLabel"></a>
+	<h3 class="subsubtitle method-title">displayLabel</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The main <code>UILabel</code> for displaying results and input.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) IBOutlet UILabel *displayLabel</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JMMCalculatorViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/buttonIsAnOperation:" title="buttonIsAnOperation:"></a>
+	<h3 class="subsubtitle method-title">buttonIsAnOperation:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Checks whether title is an operation by comparing it to the <a href="../Constants/JMMCalcOperation.html"><code>JMMCalcOperation</code></a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)buttonIsAnOperation:(NSString *)<em>title</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>title</em></dt>
+			<dd><p>The title of the <code>UIButton</code> pressed</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> or <code>NO</code></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JMMCalculatorViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/calculatorButtonPressed:" title="calculatorButtonPressed:"></a>
+	<h3 class="subsubtitle method-title">calculatorButtonPressed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Receive calc <code>UIButton</code> tapped and asks <a href="#//api/name/handleButtonWithTitlePressed:"><code>handleButtonWithTitlePressed:</code></a> to take the appropriate action.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)calculatorButtonPressed:(UIButton *)<em>button</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>button</em></dt>
+			<dd><p>The <code>UIButton</code> that was tapped</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JMMCalculatorViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/handleButtonWithTitlePressed:" title="handleButtonWithTitlePressed:"></a>
+	<h3 class="subsubtitle method-title">handleButtonWithTitlePressed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method decides which <code>UIButton</code> was tapped and calls the appropriate method.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)handleButtonWithTitlePressed:(NSString *)<em>title</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>title</em></dt>
+			<dd><p>The title of the <code>UIButton</code> pressed. This could be an equal, operation, or numeral button.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JMMCalculatorViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/handleEquals" title="handleEquals"></a>
+	<h3 class="subsubtitle method-title">handleEquals</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>When <code>UIButton</code> tapped is the equals button call <a href="../Classes/JMMCalculator.html#//api/name/equate">[JMMCalculator equate]</a>
+and set the text of <a href="#//api/name/displayLabel"><code>displayLabel</code></a> to the result of the calculation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)handleEquals</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Before equating, if no operation was just pressed add the current display text
+as an operand to the <a href="#//api/name/calculator">calculator</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JMMCalculatorViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/handleNumeralPressed:" title="handleNumeralPressed:"></a>
+	<h3 class="subsubtitle method-title">handleNumeralPressed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>When <code>UIButton</code> tapped is a numeral, concatenate numeral to the <a href="#//api/name/displayLabel"><code>displayLabel</code></a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)handleNumeralPressed:(NSString *)<em>title</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>title</em></dt>
+			<dd><p>The numeral that was pressed.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JMMCalculatorViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/handleOperationPressed:" title="handleOperationPressed:"></a>
+	<h3 class="subsubtitle method-title">handleOperationPressed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>When <code>UIButton</code> tapped is an operand button, pass the operand to the <a href="../Classes/JMMCalculator.html#//api/name/captureOperand:">[JMMCalculator captureOperand:]</a>
+and <a href="../Classes/JMMCalculator.html#//api/name/captureOperation:">[JMMCalculator captureOperation:]</a> method. This operand will be used later for in the <a href="../Classes/JMMCalculator.html#//api/name/equate">[JMMCalculator equate]</a>
+operation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)handleOperationPressed:(NSString *)<em>title</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>title</em></dt>
+			<dd><p>Title of the operation that was tapped. Passed in from <a href="#//api/name/handleButtonWithTitlePressed:">handleButtonWithTitlePressed:</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JMMCalculatorViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/operationForString:" title="operationForString:"></a>
+	<h3 class="subsubtitle method-title">operationForString:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Translates the <code>NSString</code> representation of an operation to it&rsquo;s appropriate <a href="../Constants/JMMCalcOperation.html"><code>JMMCalcOperation</code></a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (JMMCalcOperation)operationForString:(NSString *)<em>stringOp</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>stringOp</em></dt>
+			<dd><p><code>NSString</code> calcualtor operation</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The translated <a href="../Constants/JMMCalcOperation.html"><code>JMMCalcOperation</code></a></p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> Division not implemented.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JMMCalculatorViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setActionForButtons:" title="setActionForButtons:"></a>
+	<h3 class="subsubtitle method-title">setActionForButtons:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Iterates over given <code>UIButton</code>s and sets their tap action to <a href="#//api/name/calculatorButtonPressed:">calculatorButtonPressed:</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setActionForButtons:(NSArray *)<em>buttons</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>buttons</em></dt>
+			<dd><p>All the buttons</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JMMCalculatorViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/viewDidLoad" title="viewDidLoad"></a>
+	<h3 class="subsubtitle method-title">viewDidLoad</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>On view load, run <a href="#//api/name/setActionForButtons:">setActionForButtons:</a> on all buttons in <a href="#//api/name/buttonView"><code>buttonView</code></a> and intialize a new <a href="../Classes/JMMCalculator.html">JMMCalculator</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)viewDidLoad</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JMMCalculatorViewController.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 Joe and Justin. All rights reserved. (Last updated: 2014-01-07)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
